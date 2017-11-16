@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 18.2px;
+  color: $txtmain;
+}
+
+.container {
+  min-width: 1280px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main-wrapper {
+  background-image:
+  linear-gradient(to right, $bgcolor 0%, $bgcolor 65.62%, #ffffff 65.62%, #ffffff 100%),
+  linear-gradient(to bottom, $bgcolor 0, $bgcolor 670px, #ffffff 670px, #ffffff 100%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.button {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $btncolor;
+}

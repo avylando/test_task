@@ -1,0 +1,14 @@
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20.1%;
+
+  @include list-unstyle;
+
+  padding-left: 30px;
+}
+
+.user-menu__item {
+  display: inline-block;
+}

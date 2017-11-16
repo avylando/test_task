@@ -46,7 +46,7 @@ gulp.task("webp", function() {
 gulp.task("html", function() {
   return gulp.src("*.html")
   .pipe(gulp.dest("build"));
-})
+});
 
 gulp.task("serve", function() {
   server.init({

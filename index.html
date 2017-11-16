@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ЕВРАЗ. Главная</title>
-  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <header>
+  <div class="container main-wrapper">
 
-    <div class="page-header">
-      <div class="container">
+    <header class="page-header">
+
+      <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <img src="img/logo.png" alt="Evraz">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Evraz" width="69" height="20">
+          </a>
         </div>
         <nav class="page-header__nav">
           <div class="page-header__board">
@@ -24,33 +27,43 @@
           </div>
           <ul class="page-header__menu">
             <li class="page-header__menu-item">
-              <img src="img/icon-bus.png" alt="bus">
-              <a href="#">Автобусы</a>
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-bus.png" alt="bus" width="19" height="20">
+                <span class="page-header__item-label">Автобусы</span>
+              </a>
             </li>
             <li class="page-header__menu-item">
-              <img src="img/icon-cutlery.png" alt="cutlery">
-              <a href="#">Столовая</a>
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-cutlery.png" alt="cutlery" width="16" height="20">
+                <span class="page-header__item-label">Столовая</span>
+              </a>
             </li>
             <li class="page-header__menu-item">
-              <img src="img/icon-levels.png" alt="levels">
-              <a href="#">Этажи</a>
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-levels.png" alt="levels" width="22" height="20">
+                <span class="page-header__item-label">Этажи</span>
+              </a>
             </li>
             <li class="page-header__menu-item">
-              <img src="img/icon-markers.png" alt="markers">
-              <a href="#">Территории</a>
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-markers.png" alt="markers" width="17" height="20">
+                <span class="page-header__item-label">Территории</span>
+              </a>
             </li>
             <li class="page-header__menu-item page-header__menu-item--search">
-              <img src="img/icon-search.png" alt="search">
-              <a href="#">Поиск</a>
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-search.png" alt="search" width="16" height="16">
+                <span class="page-header__item-label">Поиск</span>
+              </a>
             </li>
           </ul>
           <ul class="page-header__user-menu user-menu">
             <li class="user-menu__item user-menu__item--messages">
-              <img src="img/icon-message.png" alt="message">
+              <img src="img/icon-message.png" alt="message" width="23" height="16">
               <a href="http://"></a>
             </li>
             <li class="user-menu__item user-menu__item--login">
-              <img src="img/icon-user.png" alt="user">
+              <img src="img/icon-user.png" alt="user" width="30" height="30">
               <a href="http://">Александр</a>
             </li>
           </ul>
@@ -58,52 +71,56 @@
         <nav class="page-header__main-nav">
           <ul class="page-header__main-menu main-menu">
             <li class="main-menu__item main-menu__item--active">
-              <a href="#">Наша компания</a>
+              <a class="main-menu__link" href="#">Наша компания</a>
             </li>
             <li class="main-menu__item">
-              <a href="#">Наша команда</a>
+              <a class="main-menu__link" href="#">Наша команда</a>
             </li>
             <li class="main-menu__item">
-              <a href="#">Моя безопасность</a>
+              <a class="main-menu__link" href="#">Моя безопасность</a>
             </li>
             <li class="main-menu__item">
-              <a href="#">Управляющая компания</a>
+              <a class="main-menu__link" href="#">Управляющая компания</a>
             </li>
             <li class="main-menu__item">
-              <a href="#">Наши предприятия</a>
+              <a class="main-menu__link" href="#">Наши предприятия</a>
             </li>
             <li class="main-menu__item">
-              <a href="#">Справочники</a>
+              <a class="main-menu__link" href="#">Справочники</a>
             </li>
             <li class="main-menu__item">
-              <a href="#">Сервисы</a>
+              <a class="main-menu__link" href="#">Сервисы</a>
             </li>
           </ul>
         </nav>
       </div>
-    </div>
-  </header>
 
-  <main>
+    </header>
 
-    <h1 class="visually-hidden">ЕВРАЗ. Металлургическая и горнодобывающая компания</h1>
+    <main>
 
-    <section class="about-us">
+      <h1 class="visually-hidden">ЕВРАЗ. Металлургическая и горнодобывающая компания</h1>
 
-      <div class="container">
-        <div class="about-us__quote quote">
-          <h2 class="quote__title">Иванов Алексей</h2>
-          <p class="quote__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы
-            клиентов, поставляющей продукцию высокого качества</p>
-          <p class="quote__sign">Старший Вице-президент, Блок коммерции и развития бизнеса</p>
-        </div>
-        <div class="about-us__video video-block">
-          <div class="video-block__video">
-            <img class="video-block__icon-play" src="img/icon-play.png" alt="play">
+      <section class="about-us">
+
+        <div class="about-us__wrapper">
+          <div class="about-us__video video-block">
+            <div class="video-block__video">
+              <img class="video-block__icon-play" src="img/icon-play.png" alt="play">
+            </div>
+            <h2 class="vido-block__title">ЕВРАЗ ТВ</h2>
+            <p class="video-block__text">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</p>
           </div>
-          <h2 class="vido-block__title">ЕВРАЗ ТВ</h2>
-          <p class="video-block__text">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</p>
+
+          <div class="about-us__quote quote">
+            <h2 class="quote__title">Иванов Алексей</h2>
+            <p class="quote__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на
+              запросы клиентов, поставляющей продукцию высокого качества</p>
+            <p class="quote__sign">Старший Вице-президент, Блок коммерции и развития бизнеса</p>
+          </div>
+
         </div>
+
         <div class="about-us__calendar calendar">
           <div class="calendar__person">
             <img class="calendar__person-image" src="img/icon-specialist.png" alt="specialist">
@@ -121,13 +138,11 @@
             <p class="calendar__text">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</p>
           </div>
         </div>
-      </div>
 
-    </section>
+      </section>
 
-    <section class="news">
+      <section class="news">
 
-      <div class="container">
         <div class="news__slider slider">
           <div class="slider__nav">
             <button class="slider__button slider__button--left" type="button">
@@ -191,107 +206,108 @@
             <span class="news__button-label">Мой регион</span>
           </a>
         </div>
-      </div>
+  </div>
 
-    </section>
+  </section>
 
   </main>
 
   <footer class="page-footer">
-    <div class="container">
 
-      <div class="page-footer__block page-footer__block--firm">
-        <img src="img/logo.png" alt="Evraz" class="page-footer__logo">
-        <p class="page-footer__credo">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
-      </div>
-
-      <div class="page-footer__block page-footer__block--contacts">
-        <h3 class="page-footer__title page-footer__title--hot">Горячая линия</h3>
-        <div class="page-footer__contact-block">
-          <p class="page-footer__phone-number">8-800-555-88-88</p>
-          <span class="page-footer__phone-sign">для сотрудников российских предприятий</span>
-        </div>
-        <div class="page-footer__contact-block">
-          <p class="page-footer__phone-number">0-800-502-118</p>
-          <span class="page-footer__phone-sign">для сотрудников украинских предприятий</span>
-        </div>
-        <div class="page-footer__contact-block">
-          <p class="page-footer__phone-number">8-800-080-43-58</p>
-          <span class="page-footer__phone-sign">для сотрудников ЕВРАЗ Каспиан Сталь</span>
-        </div>
-        <p class="page-footer__email">vopros@evraz.com</p>
-        <a href="#" class="page-footer__button button">Написать в горячую линию</a>
-      </div>
-
-      <div class="page-footer__block page-footer__block--exchange">
-        <h3 class="page-footer__title">Биржевые котировки</h3>
-        <div class="page-footer__table exchange-table">
-          <div class="exchange-table__head">
-            <time datetime="">28 декабря 12:35 (GMT)</time>
-          </div>
-          <div class="exchange-table__body">
-            <div class="exchange-table__row">
-              <div class="exchange-table__column">
-                <div class="exchange__current">EVRAZ (LSE): 225.10 GBX</div>
-                <div class="exchange__changes">1.20 (0.54 %)</div>
-              </div>
-              <div class="exchange-table__column">
-                <p class="exchange__course">Открытие
-                  <span class="exhange__value">221,00</span>
-                </p>
-                <p class="exchange__course">Максимум
-                  <span class="exhange__value">238,80</span>
-                </p>
-                <p class="exchange__course">Минимум
-                  <span class="exhange__value">221,00</span>
-                </p>
-              </div>
-            </div>
-            <div class="exchange-table__row">
-              <div class="exchange-table__column">
-                <div class="exchange__current">Raspadskaya (MCX): 78.96 RUB</div>
-                <div class="exchange__changes">0.65 (0.83 %)</div>
-              </div>
-              <div class="exchange-table__column">
-                <p class="exchange__course">Открытие
-                  <span class="exhange__value">221,00</span>
-                </p>
-                <p class="exchange__course">Максимум
-                  <span class="exhange__value">238,80</span>
-                </p>
-                <p class="exchange__course">Минимум
-                  <span class="exhange__value">221,00</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-footer__block">
-        <h3 class="page-footer__title">Портал</h3>
-        <ul class="page-footer__menu">
-          <li class="page-footer__menu-item">
-            <a href="http://">Обратная связь</a>
-          </li>
-          <li class="page-footer__menu-item">
-            <a href="http://">Карта разделов портала</a>
-          </li>
-          <li class="page-footer__menu-item">
-            <a href="http://">Заявка в Service Desk</a>
-          </li>
-          <li class="page-footer__menu-item">
-            <a href="http://">Помощь</a>
-          </li>
-          <li class="page-footer__menu-item">
-            <a href="http://">Команда</a>
-          </li>
-        </ul>
-        <p class="page-footer__note">Если вы нашли ошибку, выделите ее курсором, нажмите одновременно клавиши «CTRL» и «ENTER» и мы скорректируем неточность.</p>
-      </div>
-
+    <div class="page-footer__block page-footer__block--firm">
+      <img src="img/logo.png" alt="Evraz" class="page-footer__logo">
+      <p class="page-footer__credo">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
     </div>
+
+    <div class="page-footer__block page-footer__block--contacts">
+      <h3 class="page-footer__title page-footer__title--hot">Горячая линия</h3>
+      <div class="page-footer__contact-block">
+        <p class="page-footer__phone-number">8-800-555-88-88</p>
+        <span class="page-footer__phone-sign">для сотрудников российских предприятий</span>
+      </div>
+      <div class="page-footer__contact-block">
+        <p class="page-footer__phone-number">0-800-502-118</p>
+        <span class="page-footer__phone-sign">для сотрудников украинских предприятий</span>
+      </div>
+      <div class="page-footer__contact-block">
+        <p class="page-footer__phone-number">8-800-080-43-58</p>
+        <span class="page-footer__phone-sign">для сотрудников ЕВРАЗ Каспиан Сталь</span>
+      </div>
+      <p class="page-footer__email">vopros@evraz.com</p>
+      <a href="#" class="page-footer__button button">Написать в горячую линию</a>
+    </div>
+
+    <div class="page-footer__block page-footer__block--exchange">
+      <h3 class="page-footer__title">Биржевые котировки</h3>
+      <div class="page-footer__table exchange-table">
+        <div class="exchange-table__head">
+          <time datetime="">28 декабря 12:35 (GMT)</time>
+        </div>
+        <div class="exchange-table__body">
+          <div class="exchange-table__row">
+            <div class="exchange-table__column">
+              <div class="exchange__current">EVRAZ (LSE): 225.10 GBX</div>
+              <div class="exchange__changes">1.20 (0.54 %)</div>
+            </div>
+            <div class="exchange-table__column">
+              <p class="exchange__course">Открытие
+                <span class="exhange__value">221,00</span>
+              </p>
+              <p class="exchange__course">Максимум
+                <span class="exhange__value">238,80</span>
+              </p>
+              <p class="exchange__course">Минимум
+                <span class="exhange__value">221,00</span>
+              </p>
+            </div>
+          </div>
+          <div class="exchange-table__row">
+            <div class="exchange-table__column">
+              <div class="exchange__current">Raspadskaya (MCX): 78.96 RUB</div>
+              <div class="exchange__changes">0.65 (0.83 %)</div>
+            </div>
+            <div class="exchange-table__column">
+              <p class="exchange__course">Открытие
+                <span class="exhange__value">221,00</span>
+              </p>
+              <p class="exchange__course">Максимум
+                <span class="exhange__value">238,80</span>
+              </p>
+              <p class="exchange__course">Минимум
+                <span class="exhange__value">221,00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer__block">
+      <h3 class="page-footer__title">Портал</h3>
+      <ul class="page-footer__menu">
+        <li class="page-footer__menu-item">
+          <a href="http://">Обратная связь</a>
+        </li>
+        <li class="page-footer__menu-item">
+          <a href="http://">Карта разделов портала</a>
+        </li>
+        <li class="page-footer__menu-item">
+          <a href="http://">Заявка в Service Desk</a>
+        </li>
+        <li class="page-footer__menu-item">
+          <a href="http://">Помощь</a>
+        </li>
+        <li class="page-footer__menu-item">
+          <a href="http://">Команда</a>
+        </li>
+      </ul>
+      <p class="page-footer__note">Если вы нашли ошибку, выделите ее курсором, нажмите одновременно клавиши «CTRL» и «ENTER» и мы скорректируем неточность.</p>
+    </div>
+
   </footer>
+
+  </div>
+
 </body>
 
 </html>
