@@ -5,6 +5,15 @@
 
 .exchange-table__caption {
   display: table-caption;
+  color: #7f7f85;
+
+  @include txt-mini;
+}
+
+.exchange-table__caption,
+.exchange-table__cell {
+  padding-bottom: 17px;
+  border-bottom: 1px solid $tableborder;
 }
 
 .exchange-table__body {
@@ -13,9 +22,45 @@
 
 .exchange-table__row {
   display: table-row;
+  height: 45px;
 }
 
 .exchange-table__cell {
   display: table-cell;
   width: 50%;
+  padding-top: 17px;
+}
+
+.exchange-table__cell-item {
+  font-size: 12px;
+  line-height: 16.8px;
+  color: $txtfooter;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &--changes {
+    position: relative;
+    color: $courseplus;
+
+    @include txt-mini;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: 80px;
+      width: 8px;
+      height: 7px;
+      background-image: url("../img/icon-arrow-up.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--course {
+    color: $txtgreysecond;
+  }
+}
+
+.exchange-table__value {
+  font-weight: 700;
 }

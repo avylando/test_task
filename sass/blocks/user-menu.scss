@@ -12,10 +12,39 @@
 .user-menu__item {
   display: inline-block;
 
+  &--messages {
+    position: relative;
+    width: 33px;
+    height: 25px;
+  }
+
   &--login {
     text-align: center;
     width: 142px;
     border-radius: 50px;
     background-color: $btncolor;
   }
+}
+
+.user-menu__link {
+  display: block;
+  &--messages {
+    margin-top: 9px;
+
+  }
+}
+
+.user-menu__label-messages {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 14px;
+  font-size: 8px;
+  line-height: 9.6px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: $txtred;
 }
