@@ -1,0 +1,26 @@
+.slider__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  margin-left: auto;
+  margin-bottom: 58px;
+}
+
+.slider__buttons-block {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.slider__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider__body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

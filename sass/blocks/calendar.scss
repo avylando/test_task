@@ -1,3 +1,36 @@
 .calendar {
   width: 28.45%;
 }
+
+.calendar__item {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.calendar__illustration {
+  width: 50px;
+}
+
+.calendar__info {
+  width: calc(100% - 50px);
+  margin-left: 20px;
+}
+
+.calendar__person-info {
+  color: $txtgreysecond;
+
+  @include txt-mini;
+}
+
+.calendar__date {
+  color: $txtsecond;
+
+  @include txt-mini;
+}
+
+.calendar__text {
+
+  &--important {
+    color: $txtred;
+  }
+}

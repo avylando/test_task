@@ -6,9 +6,16 @@
 
   @include list-unstyle;
 
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .user-menu__item {
   display: inline-block;
+
+  &--login {
+    text-align: center;
+    width: 142px;
+    border-radius: 50px;
+    background-color: $btncolor;
+  }
 }

@@ -1,0 +1,19 @@
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 131px;
+  @include list-unstyle;
+}
+
+.nav-list__item {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $boardcolor;
+  cursor: pointer;
+
+  &--active {
+    background-color: $btncolor;
+  }
+}

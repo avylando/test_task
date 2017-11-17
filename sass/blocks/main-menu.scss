@@ -9,10 +9,10 @@
 
 .main-menu__item {
   display: inline-block;
-  font-size: 12px;
-  line-height: 14.4px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @include txt-mini;
 
   &--active {
     color: $menuactive;

@@ -1,0 +1,54 @@
+.page-footer {
+  margin-top: 61px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 55px;
+  border-top: 1px solid $borderfooter;
+}
+
+.page-footer__block {
+  width: 23.17%;
+}
+
+.page-footer__title {
+  margin-top: 0;
+
+  &--hot {
+    color: $txtred;
+  }
+}
+
+.page-footer__credo {
+  font-size: 12px;
+  line-height: 19.2px;
+  color: $txtgreysecond;
+  width: 78.95%;
+}
+
+.page-footer__phone-number {
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 700;
+  color: $txtphone;
+}
+
+.page-footer__phone-sign {
+  color: $txtgrey;
+
+  @include txt-mini;
+}
+
+.page-footer__email {
+  font-weight: 700;
+  color: $txtred;
+
+  @include txt-mini;
+}
+
+.page-footer__button {
+  text-align: center;
+  width: 215px;
+}

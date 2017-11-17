@@ -1,0 +1,21 @@
+.exchange-table {
+  display: table;
+  width: 100%;
+}
+
+.exchange-table__caption {
+  display: table-caption;
+}
+
+.exchange-table__body {
+  display: table-row-group;
+}
+
+.exchange-table__row {
+  display: table-row;
+}
+
+.exchange-table__cell {
+  display: table-cell;
+  width: 50%;
+}

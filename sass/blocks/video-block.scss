@@ -1,8 +1,39 @@
 .video-block {
-  margin-left: auto;
+  display: flex;
+  width: 51.51%;
+  margin-left: 320px;
 }
 
 .video-block__video {
+  position: relative;
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
   background-image: url("../img/video-preview@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.video-block__icon-play {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.video-block__textblock {
+  margin-left: 15px;
+}
+
+.video-block__title {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: $txtgrey;
+}
+
+.video-block__text {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: $txtsecond;
 }

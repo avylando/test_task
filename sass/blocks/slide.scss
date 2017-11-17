@@ -1,0 +1,47 @@
+.slide {
+  position: relative;
+  width: 23.28%;
+  min-height: 300px;
+}
+
+.slide__image {
+  display: block;
+}
+
+.slide__label {
+  position: absolute;
+  left: 11px;
+  top: 38.66%;
+  width: 60px;
+  height: 60px;
+
+  &--south {
+    background-color: $labelsouth;
+  }
+
+  &--zsmk {
+    background-color: $labelzsmk;
+  }
+
+  &--ntmk {
+    background-color: $labelntmk;
+  }
+}
+
+.slide__label-text {
+  font-size: 14px;
+  line-height: 19.6px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.slide__text {
+  color: $txtthird;
+  margin-top: 25px;
+}
+
+.slide__date {
+  color: $txtgreysecond;
+
+  @include txt-mini;
+}

@@ -4,3 +4,8 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+@mixin txt-mini {
+  font-size: 12px;
+  line-height: 14.4px;
+}

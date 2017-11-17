@@ -24,6 +24,7 @@
 }
 
 .page-header__board {
+  display: flex;
   text-align: center;
   vertical-align: middle;
   width: 62px;
@@ -33,6 +34,7 @@
 
   .page-header__number {
     display: inline-block;
+    margin: auto;
     font-size: 24px;
     line-height: 28.8px;
     color: $txtsecond;
