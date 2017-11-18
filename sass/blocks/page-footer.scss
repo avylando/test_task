@@ -15,18 +15,37 @@
 }
 
 .page-footer__title {
+  font-size: 14px;
+  line-height: 12.6px;
+  font-weight: 700;
   margin-top: 0;
+  margin-bottom: 14px;
 
   &--hot {
     color: $txtred;
+    margin-bottom: 18px;
   }
 }
 
 .page-footer__credo {
   font-size: 12px;
   line-height: 19.2px;
+  letter-spacing: 0.3px;
   color: $txtgreysecond;
-  width: 78.95%;
+  width: 85%;
+  margin-top: 30px;
+}
+
+.page-footer__contact-block {
+  padding-left: 3px;
+
+  &--email {
+    font-weight: 700;
+    color: $txtred;
+    margin-bottom: 22px;
+
+    @include txt-mini;
+  }
 }
 
 .page-footer__phone-number {
@@ -34,26 +53,22 @@
   line-height: 14.4px;
   font-weight: 700;
   color: $txtfooter;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .page-footer__phone-sign {
+  letter-spacing: 0.3px;
   color: $txtgrey;
 
   @include txt-mini;
 }
 
-.page-footer__email {
-  font-weight: 700;
-  color: $txtred;
-  margin-bottom: 22px;
-
-  @include txt-mini;
-}
-
 .page-footer__button {
+  letter-spacing: 0.3px;
   text-align: center;
   width: 215px;
+  padding-top: 18px;
+  padding-bottom: 16px;
 }
 
 .page-footer__menu {
@@ -64,9 +79,27 @@
   @include list-unstyle;
 }
 
+.page-footer__menu-item {
+  margin-bottom: 1px;
+}
+
+.page-footer__menu-link {
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
 .page-footer__note {
   font-size: 12px;
   line-height: 19.2px;
+  letter-spacing: 0.2px;
   color: $txtgrey;
-  margin-top: 35px;
+  margin-top: 29px;
 }

@@ -22,20 +22,19 @@
 
 .page-header__main-nav {
   width: 100%;
+  margin-top: 14px;
 }
 
 .page-header__board {
   display: flex;
-  text-align: center;
-  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
   width: 62px;
   height: 62px;
   border-radius: 50%;
   background-color: $boardcolor;
 
   .page-header__number {
-    display: inline-block;
-    margin: auto;
     font-size: 24px;
     line-height: 28.8px;
     color: $txtsecond;
@@ -50,22 +49,46 @@
 
   @include list-unstyle;
 
-  padding-left: 40px;
+  padding-left: 38px;
 }
 
 .page-header__menu-item {
   display: inline-block;
   font-size: 14px;
   line-height: 24.64px;
-  margin-right: 40px;
+  margin-right: 38px;
+
+  &--levels {
+    margin-right: 48px;
+  }
+
+  &--territory {
+    margin-right: 53px;
+  }
 
   &--search {
     line-height: 16.8px;
-    color: $searchtxt;
+    color: $txtgrey;
+    padding-right: 13px;
+    padding-top: 4px;
+  }
+}
+
+.page-header__menu-link {
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .page-header__item-label {
   display: inline-block;
-  margin-left: 20px;
+  letter-spacing: 1px;
+  vertical-align: top;
+  margin-left: 15px;
 }

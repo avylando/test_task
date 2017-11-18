@@ -9,20 +9,37 @@
 
 .main-menu__item {
   display: inline-block;
+}
+
+.main-menu__link {
+  display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
 
   @include txt-mini;
 
-  &--active {
-    color: $menuactive;
-    border-bottom: 2px solid $menuactive;
-  }
-}
-
-.main-menu__link {
-  display: inline-block;
+  letter-spacing: 1px;
   color: inherit;
   padding-top: 23px;
   padding-bottom: 23px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $menuactive;
+  }
+
+  &:active {
+    color: $menuactive;
+    opacity: 0.3;
+  }
+
+  &--active {
+    color: $menuactive;
+    border-bottom: 2px solid $menuactive;
+
+    &:active {
+      opacity: 1;
+    }
+  }
 }

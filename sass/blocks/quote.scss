@@ -1,7 +1,31 @@
 .quote {
   // align-self: flex-start;
-  width: 72%;
+  width: 75%;
   padding-left: 25px;
   margin-left: -25px;
-  background-image: linear-gradient(to right, #ffffff 0, #ffffff 345px, $bgcolor 345px, $bgcolor 100%);
+  background-image: linear-gradient(to right, #ffffff 0, #ffffff 340px, $bgcolor 340px, $bgcolor 100%);
+}
+
+.quote__title {
+  font-size: 26px;
+  line-height: 31.2px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  margin-top: 28px;
+}
+
+.quote__text {
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: 0.23px;
+  margin-top: 24px;
+}
+
+.quote__sign {
+  letter-spacing: 0.3px;
+  color: $txtgreysecond;
+  margin-top: 27px;
+  margin-bottom: 30px;
+
+  @include txt-mini;
 }

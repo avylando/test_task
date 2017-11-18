@@ -5,7 +5,9 @@
 
 .exchange-table__caption {
   display: table-caption;
+  letter-spacing: 0.3px;
   color: #7f7f85;
+  margin-top: 8px;
 
   @include txt-mini;
 }
@@ -28,19 +30,23 @@
 .exchange-table__cell {
   display: table-cell;
   width: 50%;
-  padding-top: 17px;
+  padding-left: 3px;
+  padding-top: 14px;
 }
 
 .exchange-table__cell-item {
   font-size: 12px;
   line-height: 16.8px;
+  letter-spacing: 0.5px;
   color: $txtfooter;
   margin-top: 0;
   margin-bottom: 0;
 
   &--changes {
     position: relative;
+    letter-spacing: 0.1px;
     color: $courseplus;
+    margin-top: 3px;
 
     @include txt-mini;
 

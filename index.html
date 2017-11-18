@@ -2,349 +2,385 @@
 <html lang="ru">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ЕВРАЗ. Главная</title>
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
 
-  <div class="main-wrapper">
+  <div class="main-wrapper"></div>
 
-    <div class="container">
+  <div class="container">
 
-      <header class="page-header">
+    <header class="page-header">
 
-        <div class="page-header__wrapper">
-          <div class="page-header__logo">
-            <a href="index.html">
-              <img src="img/logo.png" alt="Evraz" width="69" height="20">
-            </a>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Evraz" width="69" height="20">
+          </a>
+        </div>
+        <nav class="page-header__nav">
+          <div class="page-header__board">
+            <span class="page-header__number">73</span>
           </div>
-          <nav class="page-header__nav">
-            <div class="page-header__board">
-              <span class="page-header__number">73</span>
-            </div>
-            <ul class="page-header__menu">
-              <li class="page-header__menu-item">
-                <a class="page-header__menu-link" href="#">
-                  <img src="img/icon-bus.png" alt="bus" width="19" height="20">
-                  <span class="page-header__item-label">Автобусы</span>
-                </a>
-              </li>
-              <li class="page-header__menu-item">
-                <a class="page-header__menu-link" href="#">
-                  <img src="img/icon-cutlery.png" alt="cutlery" width="16" height="20">
-                  <span class="page-header__item-label">Столовая</span>
-                </a>
-              </li>
-              <li class="page-header__menu-item">
-                <a class="page-header__menu-link" href="#">
-                  <img src="img/icon-levels.png" alt="levels" width="22" height="20">
-                  <span class="page-header__item-label">Этажи</span>
-                </a>
-              </li>
-              <li class="page-header__menu-item">
-                <a class="page-header__menu-link" href="#">
-                  <img src="img/icon-markers.png" alt="markers" width="17" height="20">
-                  <span class="page-header__item-label">Территории</span>
-                </a>
-              </li>
-              <li class="page-header__menu-item page-header__menu-item--search">
-                <a class="page-header__menu-link" href="#">
-                  <img src="img/icon-search.png" alt="search" width="16" height="16">
-                  <span class="page-header__item-label">Поиск</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="page-header__user-menu user-menu">
-              <li class="user-menu__item user-menu__item--messages">
-                <a class="user-menu__link user-menu__link--messages" href="http://">
-                  <img src="img/icon-message.png" alt="message" width="23" height="16">
-                  <div class="user-menu__label-messages">12</div>
-                </a>
-              </li>
-              <li class="user-menu__item user-menu__item--login">
+          <ul class="page-header__menu">
+            <li class="page-header__menu-item page-header__menu-item--bus">
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-bus.png" alt="bus" width="19" height="20">
+                <span class="page-header__item-label">Автобусы</span>
+              </a>
+            </li>
+            <li class="page-header__menu-item page-header__menu-item--dinning">
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-cutlery.png" alt="cutlery" width="16" height="20">
+                <span class="page-header__item-label">Столовая</span>
+              </a>
+            </li>
+            <li class="page-header__menu-item page-header__menu-item--levels">
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-levels.png" alt="levels" width="22" height="20">
+                <span class="page-header__item-label">Этажи</span>
+              </a>
+            </li>
+            <li class="page-header__menu-item page-header__menu-item--territory">
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-markers.png" alt="markers" width="17" height="20">
+                <span class="page-header__item-label">Территории</span>
+              </a>
+            </li>
+            <li class="page-header__menu-item page-header__menu-item--search">
+              <a class="page-header__menu-link" href="#">
+                <img src="img/icon-search.png" alt="search" width="16" height="16">
+                <span class="page-header__item-label">Поиск</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="page-header__user-menu user-menu">
+            <li class="user-menu__item user-menu__item--messages">
+              <a class="user-menu__link user-menu__link--messages" href="#">
+                <img class="user-menu__icon user-menu__icon--messages" src="img/icon-message.png" alt="message" width="23" height="16">
+                <div class="user-menu__label-messages">
+                  <span>12</span>
+                </div>
+              </a>
+            </li>
+            <li class="user-menu__item user-menu__item--login">
+              <a class="user-menu__link user-menu__link--login" href="#">
                 <img src="img/icon-user.png" alt="user" width="30" height="30">
-                <a href="http://">Александр</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="page-header__main-nav">
-            <ul class="page-header__main-menu main-menu">
-              <li class="main-menu__item main-menu__item--active">
-                <a class="main-menu__link" href="#">Наша компания</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Наша команда</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Моя безопасность</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Управляющая компания</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Наши предприятия</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Справочники</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Сервисы</a>
-              </li>
-            </ul>
-          </nav>
+                <span>Александр</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="page-header__main-nav">
+          <ul class="page-header__main-menu main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active" href="#">Наша компания</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Наша команда</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Моя безопасность</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Управляющая компания</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Наши предприятия</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Справочники</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Сервисы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">ЕВРАЗ. Металлургическая и горнодобывающая компания</h1>
+
+      <section class="about-us">
+
+        <h2 class="visually-hidden">О нас</h2>
+
+        <div class="about-us__wrapper">
+          <div class="about-us__video video-block">
+            <div class="video-block__video" tabindex="0">
+              <img class="video-block__icon-play" src="img/icon-play.png" alt="play">
+            </div>
+            <div class="video-block__textblock">
+              <h3 class="video-block__title">ЕВРАЗ ТВ</h3>
+              <p class="video-block__text">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</p>
+            </div>
+          </div>
+
+          <div class="about-us__quote quote">
+            <h3 class="quote__title">Иванов Алексей</h3>
+            <p class="quote__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на
+              запросы клиентов, поставляющей продукцию высокого качества</p>
+            <p class="quote__sign">Старший Вице-президент,
+              <br>Блок коммерции и развития бизнеса</p>
+          </div>
+
         </div>
 
-      </header>
-
-      <main>
-
-        <h1 class="visually-hidden">ЕВРАЗ. Металлургическая и горнодобывающая компания</h1>
-
-        <section class="about-us">
-
-          <div class="about-us__wrapper">
-            <div class="about-us__video video-block">
-              <div class="video-block__video">
-                <img class="video-block__icon-play" src="img/icon-play.png" alt="play">
-              </div>
-              <div class="video-block__textblock">
-                <h2 class="video-block__title">ЕВРАЗ ТВ</h2>
-                <p class="video-block__text">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</p>
-              </div>
+        <div class="about-us__calendar calendar">
+          <div class="calendar__item calendar__item--person">
+            <div class="calendar__illustration">
+              <img class="calendar__person-image" src="img/icon-specialist.png" alt="specialist" width="50" height="50">
             </div>
-
-            <div class="about-us__quote quote">
-              <h2 class="quote__title">Иванов Алексей</h2>
-              <p class="quote__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на
-                запросы клиентов, поставляющей продукцию высокого качества</p>
-              <p class="quote__sign">Старший Вице-президент,
-                <br>Блок коммерции и развития бизнеса</p>
-            </div>
-
-          </div>
-
-          <div class="about-us__calendar calendar">
-            <div class="calendar__item calendar__item--person">
-              <div class="calendar__illustration">
-                <img class="calendar__person-image" src="img/icon-specialist.png" alt="specialist" width="50" height="50">
-              </div>
-              <div class="calendar__info">
-                <h3 class="calendar__person-name">Царенко Владимир</h3>
-                <p class="calendar__person-info">Главный специалист ЕвразХолдинг</p>
-              </div>
-            </div>
-            <div class="calendar__item">
-              <div class="calendar__illustration">
-                <img src="img/icon-attention.png" alt="!" class="calendar__day-icon" width="30" height="31">
-              </div>
-              <div class="calendar__info">
-                <h3 class="calendar__date">12 декабря</h3>
-                <p class="calendar__text calendar__text--important">Встреча с представителями банка ВТБ24</p>
-              </div>
-            </div>
-            <div class="calendar__item">
-              <div class="calendar__illustration">
-                <img src="img/icon-note.png" alt="note" class="calendar__day-icon" width="24" height="31">
-              </div>
-              <div class="calendar__info">
-                <h3 class="calendar__date">13 января</h3>
-                <p class="calendar__text">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</p>
-              </div>
+            <div class="calendar__info">
+              <h3 class="calendar__person-name">Царенко Владимир</h3>
+              <p class="calendar__person-info">Главный специалист ЕвразХолдинг</p>
             </div>
           </div>
-
-        </section>
-
-        <section class="news">
-
-          <div class="news__slider slider">
-            <div class="slider__nav">
-              <div class="slider__buttons-block">
-                <button class="slider__button slider__button--left" type="button">
-                  <img src="img/icon-arrow-left.png" alt="left">
-                </button>
-                <button class="slider__button slider__button--right" type="button">
-                  <img src="img/icon-arrow-right.png" alt="right">
-                </button>
-              </div>
-              <ul class="slider__nav-list nav-list">
-                <li class="nav-list__item">
-                  <a href="http://"></a>
-                </li>
-                <li class="nav-list__item nav-list__item--active">
-                  <a href="http://"></a>
-                </li>
-                <li class="nav-list__item">
-                  <a href="http://"></a>
-                </li>
-                <li class="nav-list__item">
-                  <a href="http://"></a>
-                </li>
-                <li class="nav-list__item">
-                  <a href="http://"></a>
-                </li>
-              </ul>
+          <div class="calendar__item">
+            <div class="calendar__illustration calendar__illustration--important">
+              <img src="img/icon-attention.png" alt="!" class="calendar__day-icon" width="30" height="31">
             </div>
-            <div class="slider__body">
-              <div class="slider__item slide">
-                <img src="img/transfer@1x.jpg" alt="deal" class="slide__image">
+            <div class="calendar__info">
+              <h3 class="calendar__date">12 декабря</h3>
+              <p class="calendar__text calendar__text--important">Встреча с представителями банка ВТБ24</p>
+            </div>
+          </div>
+          <div class="calendar__item">
+            <div class="calendar__illustration calendar__illustration--note">
+              <img src="img/icon-note.png" alt="note" class="calendar__day-icon" width="24" height="31">
+            </div>
+            <div class="calendar__info">
+              <h3 class="calendar__date">13 января</h3>
+              <p class="calendar__text">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="news">
+
+        <h2 class="visually-hidden">Новости</h2>
+
+        <div class="news__slider slider">
+
+          <div class="slider__nav">
+            <div class="slider__buttons-block">
+              <button class="slider__button slider__button--left" type="button">
+                <img src="img/icon-arrow-left.png" alt="left" width="14" height="25">
+              </button>
+              <button class="slider__button slider__button--right" type="button">
+                <img src="img/icon-arrow-right.png" alt="right" width="13" height="25">
+              </button>
+            </div>
+            <ul class="slider__nav-list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#"></a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__item-link nav-list__item-link--active" href="#"></a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#"></a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#"></a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider__body">
+
+            <div class="slider__item slide">
+              <a href="#" class="slide__link">
+                <picture>
+                  <source type="image/webp" srcset="img/transfer@1x.webp 1x, img/transfer@2x.webp 2x">
+                  <img src="img/transfer@1x.jpg" srcset="img/transfer@2x.jpeg 2x" alt="deal" class="slide__image" width="220" height="165">
+                </picture>
                 <div class="slide__label slide__label--south">
                   <span class="slide__label-text">ЮГ</span>
                 </div>
                 <p class="slide__text">ЕВРАЗ передал здание шахты «МУК-96» Междуреченску</p>
-                <time class="slide__date">Сегодня</time>
-              </div>
-              <div class="slider__item slide">
-                <img src="img/Loto-system@1x.jpg" alt="loto-system" class="slide__image">
+                <span class="slide__date">Сегодня</span>
+              </a>
+            </div>
+
+            <div class="slider__item slide">
+              <a href="#" class="slide__link">
+                <picture>
+                  <source type="image/webp" srcset="img/Loto-system@1x.webp 1x, img/Loto-system@1x.webp 2x">
+                  <img src="img/Loto-system@1x.jpg" srcset="img/Loto-system@2x.jpg 2x" alt="loto-system" class="slide__image" width="220" height="165">
+                </picture>
                 <div class="slide__label slide__label--south">
                   <span class="slide__label-text">ЮГ</span>
                 </div>
                 <p class="slide__text">На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</p>
-                <time class="slide__date"></time>
-              </div>
-              <div class="slider__item slide">
-                <img src="img/dealers@1x.jpg" alt="dealers" class="slide__image">
+              </a>
+            </div>
+
+            <div class="slider__item slide">
+              <a href="#" class="slide__link">
+                <picture>
+                  <source type="image/webp" srcset="img/dealers@1x.webp 1x, img/dealers@2x.webp 2x">
+                  <img src="img/dealers@1x.jpg" srcset="img/dealers@2x.jpg 2x" alt="dealers" class="slide__image" width="220" height="165">
+                </picture>
                 <div class="slide__label slide__label--zsmk">
                   <span class="slide__label-text">ЗСМК</span>
                 </div>
                 <p class="slide__text">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</p>
-                <time class="slide__date">Вчера</time>
-              </div>
-              <div class="slider__item slide">
-                <img src="img/workman@1x.jpg" alt="workman" class="slide__image">
+                <span class="slide__date">Вчера</span>
+              </a>
+            </div>
+
+            <div class="slider__item slide">
+              <a href="#" class="slide__link">
+                <picture>
+                  <source type="image/webp" srcset="img/workman@1x.webp 1x, img/workman@2x.webp 2x">
+                  <img src="img/workman@1x.jpg" srcset="img/workman@2x.jpg 2x" alt="workman" class="slide__image" width="220" height="165">
+                </picture>
                 <div class="slide__label slide__label--ntmk">
                   <span class="slide__label-text">НТМК</span>
                 </div>
                 <p class="slide__text">ЕВРАЗ НТМК повышает эффективность выплавки стали</p>
-                <time class="slide__date">19 декабря</time>
-              </div>
+                <span class="slide__date">19 декабря</span>
+              </a>
             </div>
+
           </div>
-          <div class="news__pagination">
-            <a href="#" class="news__button button">
-              <img src="img/icon-news.png" alt="news" class="news__button-icon">
-              <span class="news__button-label">Все новости</span>
-            </a>
-            <a href="#" class="news__button button">
-              <img src="img/icon-marker.png" alt="marker" class="news__button-icon">
-              <span class="news__button-label">Мой регион</span>
-            </a>
-          </div>
-
-        </section>
-
-      </main>
-
-      <footer class="page-footer">
-
-        <div class="page-footer__wrapper">
-
-          <div class="page-footer__block page-footer__block--firm">
-            <img src="img/logo.png" alt="Evraz" class="page-footer__logo">
-            <p class="page-footer__credo">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
-          </div>
-
-          <div class="page-footer__block page-footer__block--contacts">
-            <h3 class="page-footer__title page-footer__title--hot">Горячая линия</h3>
-            <div class="page-footer__contact-block">
-              <p class="page-footer__phone-number">8-800-555-88-88</p>
-              <span class="page-footer__phone-sign">для сотрудников российских предприятий</span>
-            </div>
-            <div class="page-footer__contact-block">
-              <p class="page-footer__phone-number">0-800-502-118</p>
-              <span class="page-footer__phone-sign">для сотрудников украинских предприятий</span>
-            </div>
-            <div class="page-footer__contact-block">
-              <p class="page-footer__phone-number">8-800-080-43-58</p>
-              <span class="page-footer__phone-sign">для сотрудников ЕВРАЗ Каспиан Сталь</span>
-            </div>
-            <p class="page-footer__email">vopros@evraz.com</p>
-            <a href="#" class="page-footer__button button">Написать в горячую линию</a>
-          </div>
-
-          <div class="page-footer__block page-footer__block--exchange">
-            <h3 class="page-footer__title">Биржевые котировки</h3>
-            <div class="page-footer__table exchange-table">
-              <div class="exchange-table__caption">
-                <time datetime="">28 декабря 12:35 (GMT)</time>
-              </div>
-              <div class="exchange-table__body">
-                <div class="exchange-table__row">
-                  <div class="exchange-table__cell">
-                    <p class="exchange-table__cell-item exchange-table__cell-item--type">EVRAZ (LSE):</p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--current">
-                      <span class="exchange-table__value">225.10</span> GBX</p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--changes">1.20 (0.54 %)</p>
-                  </div>
-                  <div class="exchange-table__cell">
-                    <p class="exchange-table__cell-item exchange-table__cell-item--course">Открытие
-                      <span class="exchange-table__value">221,00</span>
-                    </p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--course">Максимум
-                      <span class="exchange-table__value">238,80</span>
-                    </p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--course">Минимум
-                      <span class="exchange-table__value">221,00</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="exchange-table__row">
-                  <div class="exchange-table__cell">
-                    <p class="exchange-table__cell-item exchange-table__cell-item--type">Raspadskaya (MCX):</p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--current">
-                      <span class="exchange-table__value">78.96</span> RUB</p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--changes">0.65 (0.83 %)</p>
-                  </div>
-                  <div class="exchange-table__cell">
-                    <p class="exchange-table__cell-item exchange-table__cell-item--course">Открытие
-                      <span class="exchange-table__value">221,00</span>
-                    </p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--course">Максимум
-                      <span class="exchange-table__value">238,80</span>
-                    </p>
-                    <p class="exchange-table__cell-item exchange-table__cell-item--course">Минимум
-                      <span class="exchange-table__value">221,00</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="page-footer__block">
-            <h3 class="page-footer__title">Портал</h3>
-            <ul class="page-footer__menu">
-              <li class="page-footer__menu-item">
-                <a href="http://">Обратная связь</a>
-              </li>
-              <li class="page-footer__menu-item">
-                <a href="http://">Карта разделов портала</a>
-              </li>
-              <li class="page-footer__menu-item">
-                <a href="http://">Заявка в Service Desk</a>
-              </li>
-              <li class="page-footer__menu-item">
-                <a href="http://">Помощь</a>
-              </li>
-              <li class="page-footer__menu-item">
-                <a href="http://">Команда</a>
-              </li>
-            </ul>
-            <p class="page-footer__note">Если вы нашли ошибку, выделите ее курсором, нажмите одновременно клавиши «CTRL» и «ENTER» и мы скорректируем
-              неточность.
-            </p>
-          </div>
-
         </div>
 
-      </footer>
+        <div class="news__pagination">
+          <a href="#" class="news__button news__button--all button">
+            <img src="img/icon-news.png" alt="news" class="news__button-icon">
+            <span class="news__button-label">Все новости</span>
+          </a>
+          <a href="#" class="news__button news__button--region button">
+            <img src="img/icon-marker.png" alt="marker" class="news__button-icon">
+            <span class="news__button-label">Мой регион</span>
+          </a>
+        </div>
 
-    </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <div class="page-footer__wrapper">
+
+        <div class="page-footer__block page-footer__block--firm">
+          <a href="#">
+            <img src="img/logo-mini.png" alt="Evraz" class="page-footer__logo">
+          </a>
+          <p class="page-footer__credo">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
+        </div>
+
+        <div class="page-footer__block page-footer__block--contacts">
+          <h3 class="page-footer__title page-footer__title--hot">Горячая линия</h3>
+          <div class="page-footer__contact-block">
+            <p class="page-footer__phone-number">8-800-555-88-88</p>
+            <span class="page-footer__phone-sign">для сотрудников российских предприятий</span>
+          </div>
+          <div class="page-footer__contact-block">
+            <p class="page-footer__phone-number">0-800-502-118</p>
+            <span class="page-footer__phone-sign">для сотрудников украинских предприятий</span>
+          </div>
+          <div class="page-footer__contact-block">
+            <p class="page-footer__phone-number">8-800-080-43-58</p>
+            <span class="page-footer__phone-sign">для сотрудников ЕВРАЗ Каспиан Сталь</span>
+          </div>
+          <p class="page-footer__contact-block page-footer__contact-block--email">vopros@evraz.com</p>
+          <a href="#" class="page-footer__button button">Написать в горячую линию</a>
+        </div>
+
+        <div class="page-footer__block page-footer__block--exchange">
+          <h3 class="page-footer__title">Биржевые котировки</h3>
+          <div class="page-footer__table exchange-table">
+            <div class="exchange-table__caption">
+              <span>28 декабря 12:35 (GMT)</span>
+            </div>
+            <div class="exchange-table__body">
+              <div class="exchange-table__row">
+                <div class="exchange-table__cell">
+                  <p class="exchange-table__cell-item exchange-table__cell-item--type">EVRAZ (LSE):</p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--current">
+                    <span class="exchange-table__value">225.10</span> GBX</p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--changes">1.20 (0.54 %)</p>
+                </div>
+                <div class="exchange-table__cell">
+                  <p class="exchange-table__cell-item exchange-table__cell-item--course">Открытие
+                    <span class="exchange-table__value">221,00</span>
+                  </p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--course">Максимум
+                    <span class="exchange-table__value">238,80</span>
+                  </p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--course">Минимум
+                    <span class="exchange-table__value">221,00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="exchange-table__row">
+                <div class="exchange-table__cell">
+                  <p class="exchange-table__cell-item exchange-table__cell-item--type">Raspadskaya (MCX):</p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--current">
+                    <span class="exchange-table__value">78.96</span> RUB</p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--changes">0.65 (0.83 %)</p>
+                </div>
+                <div class="exchange-table__cell">
+                  <p class="exchange-table__cell-item exchange-table__cell-item--course">Открытие
+                    <span class="exchange-table__value">221,00</span>
+                  </p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--course">Максимум
+                    <span class="exchange-table__value">238,80</span>
+                  </p>
+                  <p class="exchange-table__cell-item exchange-table__cell-item--course">Минимум
+                    <span class="exchange-table__value">221,00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-footer__block">
+          <h3 class="page-footer__title">Портал</h3>
+          <ul class="page-footer__menu">
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Обратная связь</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Карта разделов портала</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Заявка в Service Desk</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Помощь</a>
+            </li>
+            <li class="page-footer__menu-item">
+              <a class="page-footer__menu-link" href="#">Команда</a>
+            </li>
+          </ul>
+          <p class="page-footer__note">Если вы нашли ошибку, выделите ее курсором, нажмите одновременно клавиши «CTRL» и «ENTER» и мы скорректируем неточность.
+          </p>
+        </div>
+
+      </div>
+
+    </footer>
 
   </div>
 

@@ -1,19 +1,36 @@
 .nav-list {
   display: flex;
   justify-content: space-between;
-  width: 131px;
+  width: 135px;
   @include list-unstyle;
+
+  margin-top: 6px;
 }
 
 .nav-list__item {
+  display: inline-block;
+}
+
+.nav-list__item-link {
   display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: $boardcolor;
+  outline: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #949497;
+  }
 
   &--active {
     background-color: $btncolor;
+
+    &:hover,
+    &:focus {
+      background-color: $btncolor;
+    }
   }
 }
